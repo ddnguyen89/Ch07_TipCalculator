@@ -16,7 +16,6 @@ import java.text.NumberFormat;
 
 public class MainActivity extends AppCompatActivity implements OnEditorActionListener, OnClickListener {
 
-
     //define member variables for the widgets
     private TextView percentTV;
     private TextView tipPercentTV;
@@ -77,8 +76,6 @@ public class MainActivity extends AppCompatActivity implements OnEditorActionLis
                 calculateAndDisplay();
                 break;
             case R.id.resetButton:
-
-
                 reset();
                 break;
         }
@@ -147,8 +144,5 @@ public class MainActivity extends AppCompatActivity implements OnEditorActionLis
 
         //calculate and display
         calculateAndDisplay();
-
-        billAmountString = "";
-        tipPercent = 0.15f;
     }
 }

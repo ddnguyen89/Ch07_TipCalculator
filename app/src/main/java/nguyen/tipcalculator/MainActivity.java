@@ -1,5 +1,6 @@
 package nguyen.tipcalculator;
 
+import android.content.SharedPreferences;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.view.View.OnClickListener;
-
+import android.content.SharedPreferences.Editor;
 import java.text.NumberFormat;
 
 public class MainActivity extends AppCompatActivity implements OnEditorActionListener, OnClickListener {
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements OnEditorActionLis
     NumberFormat percent = NumberFormat.getPercentInstance();
     NumberFormat currency = NumberFormat.getCurrencyInstance();
 
+    private SharedPreferences savedValues;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +56,9 @@ public class MainActivity extends AppCompatActivity implements OnEditorActionLis
         incrementButton.setOnClickListener(this);
         decrementButton.setOnClickListener(this);
         resetButton.setOnClickListener(this);
+
+        //get the shared preferences
+        savedValues = getSharedPreferences("savedValues", MODE_PRIVATE);
     }
 
     @Override
@@ -114,5 +120,31 @@ public class MainActivity extends AppCompatActivity implements OnEditorActionLis
         percentTV.setText(percent.format(percentAmount));
         tipPercentTV.setText(currency.format(tipAmount));
         totalTV.setText(currency.format(totalAmount));
+    }
+
+    @Override
+    protected void onPause() {
+        //save the instance variables
+        Editor editor = savedValues.edit();
+        editor.putString("billAmountString", billAmountString);
+        editor.putFloat("tipPercent", tipPercent);
+        editor.commit();
+
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        //get the instance variables
+        billAmountString = savedValues.getString("billAmountString", "");
+        tipPercent = savedValues.getFloat("tipPercent", 0.15f);
+
+        //set the bill amount on its widget
+        billET.setText(billAmountString);
+
+        //calculate and display
+        calculateAndDisplay();
     }
 }

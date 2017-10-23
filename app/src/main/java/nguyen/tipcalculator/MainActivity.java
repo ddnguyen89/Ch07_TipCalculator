@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements OnEditorActionLis
 
         //get the shared preferences
         savedValues = getSharedPreferences("savedValues", MODE_PRIVATE);
+
     }
 
     @Override
@@ -146,5 +147,8 @@ public class MainActivity extends AppCompatActivity implements OnEditorActionLis
 
         //calculate and display
         calculateAndDisplay();
+
+        billAmountString = "";
+        tipPercent = 0.15f;
     }
 }

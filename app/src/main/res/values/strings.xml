@@ -10,5 +10,19 @@
     <string name="increment_button">+</string>
     <string name="decrement_button">-</string>
     <string name="reset_button">Reset</string>
+    <string name="rounding_label">Rounding</string>
+    <string name="none_radio_button">None</string>
+    <string name="total_radio_button">Total</string>
+    <string name="tip_radio_button">Tip</string>
+    <string name="split_label">Split?</string>
+    <string name="per_person_label">Per Person</string>
+    <string name="per_person_tv">$0.00</string>
 
+
+    <string-array name="split_array">
+        <item>No</item>
+        <item>2 ways</item>
+        <item>3 ways</item>
+        <item>4 ways</item>
+    </string-array>
 </resources>

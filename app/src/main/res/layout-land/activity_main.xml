@@ -30,10 +30,17 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/applyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apply_button"
+            android:layout_marginLeft="20dp"/>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -64,28 +71,12 @@
                     android:layout_height="wrap_content"
                     android:text="@string/percent_tv"
                     android:textSize="20sp" />
-
-                <Button
-                    android:id="@+id/incrementButton"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:text="@string/increment_button" />
-
-                <View
-                    android:layout_width="15dp"
-                    android:layout_height="match_parent" />
-
-                <Button
-                    android:id="@+id/decrementButton"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:text="@string/decrement_button" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -131,10 +122,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:layout_weight="2"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/percentSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="30"
+                    android:progress="15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
@@ -149,7 +155,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/rounding_label"
                         android:textSize="20sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <RadioGroup
                         android:id="@+id/roundingRadioGroup"
@@ -177,7 +183,7 @@
                 </LinearLayout>
 
                 <View
-                    android:layout_width="25dp"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent" />
 
                 <LinearLayout
@@ -191,14 +197,17 @@
                         android:layout_height="wrap_content"
                         android:text="@string/split_label"
                         android:textSize="20sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <Spinner
                         android:id="@+id/splitSpinner"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
+
                 </LinearLayout>
             </LinearLayout>
+
+
         </LinearLayout>
     </LinearLayout>
 
@@ -207,7 +216,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
         <TextView

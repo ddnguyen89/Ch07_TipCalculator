@@ -7,8 +7,7 @@
     <string name="percent_tv">15%</string>
     <string name="tip_percent_tv">$0.00</string>
     <string name="total_tv">$0.00</string>
-    <string name="increment_button">+</string>
-    <string name="decrement_button">-</string>
+    <string name="apply_button">Apply</string>
     <string name="reset_button">Reset</string>
     <string name="rounding_label">Rounding</string>
     <string name="none_radio_button">None</string>
@@ -17,7 +16,6 @@
     <string name="split_label">Split?</string>
     <string name="per_person_label">Per Person</string>
     <string name="per_person_tv">$0.00</string>
-
 
     <string-array name="split_array">
         <item>No</item>

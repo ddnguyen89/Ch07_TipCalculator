@@ -11,18 +11,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        style="@style/LinearLayoutHorizontal">
 
         <TextView
             android:id="@+id/billLabel"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/bill_label"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            style="@style/TextView.Label" />
 
         <EditText
             android:id="@+id/billET"
@@ -35,25 +31,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        style="@style/LinearLayoutHorizontal">
 
         <TextView
             android:id="@+id/percentLabel"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/percent_label"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            style="@style/TextView.Label" />
 
         <TextView
             android:id="@+id/percentTV"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:text="@string/percent_tv"
-            android:textSize="20sp" />
+            style="@style/TextView" />
 
         <Button
             android:id="@+id/applyButton"
@@ -65,74 +57,61 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        style="@style/LinearLayoutHorizontal">
 
         <SeekBar
             android:id="@+id/percentSeekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:max="30"
-            android:progress="15"/>
+            android:progress="15"
+            style="@style/PaddedWidget" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        style="@style/LinearLayoutHorizontal">
 
         <TextView
             android:id="@+id/tipPercentLabel"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/tip_percent_label"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            style="@style/TextView.Label" />
 
         <TextView
             android:id="@+id/tipPercentTV"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:text="@string/tip_percent_tv"
-            android:textSize="20sp" />
+            style="@style/TextView" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        style="@style/LinearLayoutHorizontal">
 
         <TextView
             android:id="@+id/totalLabel"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/total_label"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            style="@style/TextView.Label" />
 
         <TextView
             android:id="@+id/totalTV"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:text="@string/total_tv"
-            android:textSize="20sp" />
+            style="@style/TextView" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        style="@style/LinearLayoutHorizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -146,13 +125,13 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="@string/rounding_label"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
+                style="@style/TextView.Label" />
 
             <RadioGroup
                 android:id="@+id/roundingRadioGroup"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                style="@style/PaddedWidget">
 
                 <RadioButton
                     android:id="@+id/noneRadioButton"
@@ -190,8 +169,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/split_label"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
+                style="@style/TextView.Label" />
 
             <Spinner
                 android:id="@+id/splitSpinner"
@@ -203,34 +181,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        style="@style/LinearLayoutHorizontal">
 
         <TextView
             android:id="@+id/perPersonLabel"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/per_person_label"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+            style="@style/TextView.Label" />
 
         <TextView
             android:id="@+id/perPersonTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/per_person_tv"
-            android:textSize="20sp"/>
+            style="@style/TextView" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        style="@style/LinearLayoutHorizontal">
 
         <Button
             android:id="@+id/resetButton"

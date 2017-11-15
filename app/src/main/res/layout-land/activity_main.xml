@@ -11,18 +11,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        style="@style/LinearLayoutHorizontal">
 
         <TextView
             android:id="@+id/billLabel"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/bill_label"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            style="@style/TextView.Label" />
 
         <EditText
             android:id="@+id/billET"
@@ -42,10 +38,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        style="@style/LinearLayoutHorizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -62,15 +55,14 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:text="@string/percent_label"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    style="@style/TextView.Label" />
 
                 <TextView
                     android:id="@+id/percentTV"
                     android:layout_width="75dp"
                     android:layout_height="wrap_content"
                     android:text="@string/percent_tv"
-                    android:textSize="20sp" />
+                    style="@style/TextView" />
             </LinearLayout>
 
             <LinearLayout
@@ -84,15 +76,14 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:text="@string/tip_percent_label"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    style="@style/TextView.Label" />
 
                 <TextView
                     android:id="@+id/tipPercentTV"
                     android:layout_width="75dp"
                     android:layout_height="wrap_content"
                     android:text="@string/tip_percent_tv"
-                    android:textSize="20sp" />
+                    style="@style/TextView" />
             </LinearLayout>
 
             <LinearLayout
@@ -106,15 +97,14 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:text="@string/total_label"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    style="@style/TextView.Label" />
 
                 <TextView
                     android:id="@+id/totalTV"
                     android:layout_width="75dp"
                     android:layout_height="wrap_content"
                     android:text="@string/total_tv"
-                    android:textSize="20sp" />
+                    style="@style/TextView" />
             </LinearLayout>
         </LinearLayout>
 
@@ -154,8 +144,7 @@
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="@string/rounding_label"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        style="@style/TextView.Label" />
 
                     <RadioGroup
                         android:id="@+id/roundingRadioGroup"
@@ -196,8 +185,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/split_label"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        style="@style/TextView.Label" />
 
                     <Spinner
                         android:id="@+id/splitSpinner"
@@ -223,15 +211,14 @@
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="@string/per_person_label"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+            style="@style/TextView.Label" />
 
         <TextView
             android:id="@+id/perPersonTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/per_person_tv"
-            android:textSize="20sp"/>
+            style="@style/TextView" />
 
         <View
             android:layout_width="match_parent"

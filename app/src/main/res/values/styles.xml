@@ -6,6 +6,45 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAppearance">@style/TextAppearance</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:dropDownItemStyle">@style/DropDownItem</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="textColorPrimary">@color/white</item>
+        <item name="textColorSecondary">@color/white</item>
     </style>
 
+    <style name="TextView">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextView.Label">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <style name="PaddedWidget">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="TextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="SpinnerItem" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="DropDownItem" parent="android:Widget.DropDownItem">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="LinearLayoutHorizontal">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
 </resources>
